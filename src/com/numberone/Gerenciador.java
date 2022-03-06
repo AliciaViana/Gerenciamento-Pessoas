@@ -13,11 +13,15 @@ public class Gerenciador {
 		String nome = myObj.nextLine();
 		System.out.println("digite cor do seu cabelo: ");
 		String corCabelo = myObj.nextLine();
+		System.out.println("Qual sua idade: ");
+		int idade = myObj.nextInt();
 		
 		novaPessoa.setNome(nome);
 		novaPessoa.setCorCabelo(corCabelo);
+		novaPessoa.setIdade(idade);
 		
 		pessoaServico.carregaNome(novaPessoa.getNome());
 		pessoaServico.carregaCorCabelo(novaPessoa.getCorCabelo());
+		pessoaServico.carregaIdade(novaPessoa.getIdade());
 	}
 }
